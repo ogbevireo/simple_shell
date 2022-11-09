@@ -15,7 +15,7 @@ int is_cdir(char *path, int *i)
 	{
 		*i += 1;
 	}
-	
+
 	if (path[*i])
 		*i += 1;
 
@@ -71,8 +71,6 @@ char *_which(char *cmd, char **_environ)
 			return (cmd);
 	return (NULL);
 }
-
-
 
 /**
  * is_executable - determines if is an executable
@@ -153,7 +151,6 @@ int check_error_cmd(char *dir, data_shell *datash)
 		}
 	}
 	return (0);
-
 }
 
 /**
@@ -169,7 +166,7 @@ int cmd_exec(data_shell *datash)
 	int state;
 	int exec;
 	char *dir;
-	(void) wpd;
+	(void)wpd;
 
 	exec = is_executable(datash);
 	if (exec == -1)
@@ -197,7 +194,7 @@ int cmd_exec(data_shell *datash)
 	}
 	else
 	{
-		do{
+		do {
 			wpd = waitpid(pd, &state, WUNTRACED);
 		} while (!WIFEXITED(state) && !WIFSIGNALED(state));
 	}
