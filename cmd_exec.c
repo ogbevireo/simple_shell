@@ -10,14 +10,16 @@ int is_cdir(char *path, int *i)
 {
 	if (path[*i] == ':')
 		return (1);
-		while (path[*i] != ':' && path[*i])
-		{
-			*i += 1;
-		}
-		if (path[*i])
-			*i += 1;
 
-		return (0);
+	while (path[*i] != ':' && path[*i])
+	{
+		*i += 1;
+	}
+	
+	if (path[*i])
+		*i += 1;
+
+	return (0);
 }
 
 /**
@@ -57,14 +59,14 @@ char *_which(char *cmd, char **_environ)
 				return (dir);
 			}
 			free(dir);
-			token_path = _strtok(NULL, ":";)
+			token_path = _strtok(NULL, ":");
 		}
 		free(ptr_path);
 		if (stat(cmd, &st) == 0)
 			return (cmd);
-		return (Null);
+		return (NULL);
 	}
-	if (cmd[0] == '/'
+	if (cmd[0] == '/')
 		if (stat(cmd, &st) == 0)
 			return (cmd);
 	return (NULL);
@@ -126,7 +128,7 @@ int is_executable(data_shell *datash)
  */
 int check_error_cmd(char *dir, data_shell *datash)
 {
-	if (dir == Null)
+	if (dir == NULL)
 	{
 		get_error(datash, 127);
 		return (1);
