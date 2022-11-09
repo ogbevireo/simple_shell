@@ -1,7 +1,7 @@
 B.\"Manpage for simple shell
-.\"Created by Obogrow, Ogbevire and Otobong Isong
+.\"Created by Obogrow, Ogbevire and Jemima Aisha Okouya
 
-.TH SODASH 1 "August 2019" "Alx School" "SODA SHELL - Simple Shell man page"
+.TH SODASH 1 "November, 2022" "Alx School" "SODA SHELL - Simple Shell man page"
 
 .SH NAME
 sodash\fR \- simple UNIX command interpreter
@@ -10,7 +10,7 @@ sodash\fR \- simple UNIX command interpreter
 soda\fR [\fIfilename\fR]
 
 .SH COPYRIGHT
-soda is Copyright (C) 2019 by Obogrow, Ogbevire and Otobong Isong
+soda is Copyright (C) 2022 by Obogrow, Ogbevire and Jemima Aisha Okouya
 
 .SH DESCRIPTION
 Soda\fR is a sh-compatible command language interpreter that executes commands read from the standard input or from a file.
@@ -97,4 +97,4 @@ read (man 2 read), readdir (man 3 readdir), signal (man 2 signal), stat (__xstat
 Sodash\fR takes basic functionality of the \fBsh\fR shell. This man page is based on the man page bash(1)
 
 .SH AUTHORS
-Obogrow, Ogbevire and Otobong Isong
+Obogrow, Ogbevire and Jemima Aisha Okouya
